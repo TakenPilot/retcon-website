@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<checkstyle>
+
+<file name="test/karma.conf.js">
+  
+</file>
+
+
+
+<file name="test/spec/controllers/about.js">
+  
+</file>
+
+
+
+<file name="test/spec/controllers/main.js">
+  
+</file>
+
+
+
+</checkstyle>
