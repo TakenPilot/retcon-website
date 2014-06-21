@@ -7,6 +7,12 @@
 
 
 
+<file name="test/spec/controllers/header.js">
+  
+</file>
+
+
+
 <file name="test/spec/controllers/about.js">
   
 </file>
@@ -14,6 +20,24 @@
 
 
 <file name="test/spec/controllers/main.js">
+  
+</file>
+
+
+
+<file name="test/spec/controllers/rates.js">
+  
+</file>
+
+
+
+<file name="test/spec/controllers/services.js">
+  
+</file>
+
+
+
+<file name="test/spec/services/templatedecorator.js">
   
 </file>
 

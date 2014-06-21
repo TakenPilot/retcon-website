@@ -8,10 +8,6 @@
  * Controller of the retconWebsiteApp
  */
 angular.module('retconWebsiteApp')
-  .controller('MainCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-  });
+  .controller('MainCtrl', ['$scope', 'TemplateDecorator', function ($scope, TemplateDecorator) {
+    TemplateDecorator.apply($scope);
+  }]);

@@ -2,12 +2,12 @@
 
 /**
  * @ngdoc function
- * @name retconWebsiteApp.controller:AboutCtrl
+ * @name retconWebsiteApp.controller:ServicesCtrl
  * @description
- * # AboutCtrl
+ * # ServicesCtrl
  * Controller of the retconWebsiteApp
  */
 angular.module('retconWebsiteApp')
-  .controller('AboutCtrl', ['$scope', 'TemplateDecorator', function ($scope, TemplateDecorator) {
+  .controller('ServicesCtrl', ['$scope', 'TemplateDecorator', function ($scope, TemplateDecorator) {
     TemplateDecorator.apply($scope);
   }]);

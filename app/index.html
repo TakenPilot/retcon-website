@@ -2,7 +2,7 @@
 <html class="no-js">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Retcon Research and Development</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
@@ -21,19 +21,22 @@
 
     <!-- Add your site or application content here -->
     <div class="container">
-      <div class="header">
+      <div class="header" ng-controller="HeaderCtrl">
         <ul class="nav nav-pills pull-right">
-          <li class="active"><a ng-href="#">Home</a></li>
-          <li><a ng-href="#/about">About</a></li>
-          <li><a ng-href="#">Contact</a></li>
+          <li ng-class="{ active: isActive('/')}"><a ng-href="#">Home</a></li>
+          <li ng-class="{ active: isActive('/about')}"><a ng-href="#/about">About</a></li>
+          <li ng-class="{ active: isActive('/rates')}"><a ng-href="#/rates">Rates</a></li>
+          <li ng-class="{ active: isActive('/services')}"><a ng-href="#/services">Services</a></li>
         </ul>
-        <h3 class="text-muted">retconWebsite</h3>
+        <h3 class="text-muted">Retcon Research and Development</h3>
       </div>
 
       <div ng-view=""></div>
 
       <div class="footer">
-        <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
+        <p>
+          <span class="glyphicon glyphicon-heart"></span>
+        </p>
       </div>
     </div>
 
@@ -76,6 +79,7 @@
     <script src="bower_components/angular-animate/angular-animate.js"></script>
     <script src="bower_components/angular-touch/angular-touch.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/lodash/dist/lodash.compat.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -83,6 +87,10 @@
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/about.js"></script>
+        <script src="scripts/services/templatedecorator.js"></script>
+        <script src="scripts/controllers/services.js"></script>
+        <script src="scripts/controllers/rates.js"></script>
+        <script src="scripts/controllers/header.js"></script>
         <!-- endbuild -->
 </body>
 </html>

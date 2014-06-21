@@ -1,22 +1,22 @@
 'use strict';
 
-describe('Controller: AboutCtrl', function () {
+describe('Controller: RatesCtrl', function () {
 
   // load the controller's module
   beforeEach(module('retconWebsiteApp'));
 
-  var AboutCtrl,
+  var RatesCtrl,
     scope;
 
   // Initialize the controller and a mock scope
   beforeEach(inject(function ($controller, $rootScope) {
     scope = $rootScope.$new();
-    AboutCtrl = $controller('AboutCtrl', {
+    RatesCtrl = $controller('RatesCtrl', {
       $scope: scope
     });
   }));
 
   it('should exist', function () {
-    expect(!!AboutCtrl).toBe(true);
+    expect(!!RatesCtrl).toBe(true);
   });
 });
