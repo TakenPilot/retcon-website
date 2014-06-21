@@ -1,0 +1,26 @@
+//always a pointer, even if it's a local reference or a ng-click
+a {
+  cursor: pointer;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+  width: 80%;
+
+  td {
+    border: 1px solid black;
+    padding: 5px;
+  }
+
+  tr:nth-child(even) {
+    background: lightgray;
+  }
+
+  &.static-two-column {
+    td {
+      width: 50%;
+    }
+  }
+}
